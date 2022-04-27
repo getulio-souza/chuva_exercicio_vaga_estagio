@@ -24,6 +24,17 @@ li{
     list-style-type: none;
 }
 
+
+/*
+==============================
+Corpo da página
+==============================
+*/
+
+.corpo_da_pagina_base{
+   display: flex;
+}
+
 /*
 ==============================
 Menu Lateral
@@ -62,6 +73,7 @@ top: 20%;
 
 .logo_img{
   max-width: 20vw;
+  padding: 0 10px;
 }
 
 .menu_lateral_container ul li a{
@@ -95,7 +107,60 @@ color: #725C5C;
 
 /*
 ==============================
-Container principal 
+Barra superior
 ==============================
 */
 
+.barra_superior_background{
+ background-color:#FDF1EB;
+ width: 100vw;
+ display: flex;
+}
+
+.barra_superior_text{
+    padding-top: 10px;
+}
+
+.info_text{
+    margin-right: 10px;
+}
+
+.idioma_btn_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 34px;
+    border-radius: 3px;
+}
+
+.idioma_btn_container:hover{
+    background-color: rgb(226, 220, 220);
+}
+
+.idioma_btn_text{
+    margin: 0 10px;
+}
+
+.language_and_userInfo{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.user_info_container{
+    text-align: end;
+    display: flex;
+    margin: 10px 20px;
+    padding: 10px;
+    font-family: Quicksand;
+    position: relative;
+    top: -10%;
+}
+.user_info_photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 2%;
+}

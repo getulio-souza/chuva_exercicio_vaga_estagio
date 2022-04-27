@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
+    <section class="corpo_da_pagina_base">
     <!-- menu lateral esquerdo-->
-    <section class="menu_lateral_container">
+    <article class="menu_lateral_container">
       <!-- SLACA 2019 -->
       <div class="scala_2019_background">
           <p class="scala_2019_text">SLACA 2019</p>
@@ -36,15 +40,38 @@
               <div class="category_underline"></div>
             </ul>
       </div>
-    </section>
+    </article>
 
     <!-- container principal-->
      <section class="container-principal">
        <!-- barra superior -->
-       <article class="fundo_barra_superior">
+       <section class="barra_superior_background">
+        <article class="barra_superior_text">
+            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos </p>
+            <h4>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h4>
+            <p>ISSN: 1234-5678</p>
+        </article>
+
+        <!-- botão de escolher idioma-->
+        <article class="language_and_userInfo">
+            <button class="idioma_btn_container">
+                <i class="fa-solid fa-globe"></i>
+                <p class="idioma_btn_text">PT,BR</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <!-- usuário -->
+            <article class="user_info_container">
+                    <div class="info_text">
+                        <p>Bem-vindo</p>
+                        <p>alguem12@galoascience.com</p>
+                    </div>
+                <img src="../Imagens/photo_info.jpg" alt="" class="user_info_photo">
+        </article>
 
        </article>
      </section>
+        </section>
+
     <script src=""></script>
 </body>
 </html>
