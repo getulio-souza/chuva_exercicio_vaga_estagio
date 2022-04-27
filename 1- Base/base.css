@@ -347,7 +347,7 @@ Discussões
 
 .discussoes_container{
   max-width: 71.3vw;
-  height: 621px;
+  height: 570px;
   margin: 20px 0;
   border-radius: 3px;
   border: 1px solid #ECECEC;
@@ -416,6 +416,7 @@ Discussões - Compartilhar ideias
     height: 32px;
     transition: .5s;
     z-index: 2;
+    cursor: pointer;
 }
 
 .share_ideas_btn:hover{
@@ -489,9 +490,56 @@ Discussões - Comentários
 
 .heart{
     color: #fff;
+    cursor: pointer;
+}
+.heart:hover{
+    color: #FEB254;
 }
 
 .comentario_text{
    color: #757575;
    margin: 0 3px;
+}
+
+/*
+==================================
+Footer
+==================================
+*/
+
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_logo_and_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    max-width: 71.3vw;
+}
+
+.footer_logo_img{
+   width: 300px;
+}
+
+.footer_btn{
+    background-color: rgb(104, 7, 104);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100px;
+    border-style: none;
+    margin-top: 10px;
+}
+
+.footer_text{
+    margin: 0 20px;
+}
+
+.footer_text p{
+    max-width: 1000px;
+    margin-top: 10px;
 }
