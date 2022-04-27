@@ -42,9 +42,15 @@ Menu Lateral
 */
 
 .menu_lateral_container{
-    width: 20vw;
+    max-width: 20vw;
     height: 100vh;
     box-shadow: 1px 2px 10px grey;
+}
+
+@media screen and (max-width:678px){
+    .menu_lateral_container{
+        display: none;
+    }
 }
 
 .scala_2019_background{
@@ -88,6 +94,7 @@ color: #725C5C;
     margin:10px 0;
     padding-left: 20px;
     transition: .5s;
+    color: #000;
 }
 
 .menu_lateral_container ul li:hover{
@@ -123,7 +130,7 @@ Barra superior
 
 .barra_superior_background{
  background-color:#FDF1EB;
- width: 100vw;
+ width: 80vw;
  display: flex;
  padding: 10px;
 }
@@ -204,7 +211,8 @@ titulo e botões
 }
 
 .title_and_btns h3{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    max-width: 55vw;
     margin: 20px 0;
     color: #EE7A3A;
 }
@@ -216,21 +224,52 @@ titulo e botões
    height: 540px;
 }
 
-.buttons_orange{
+.buttons_and_text_uppercase{
+    position:absolute;
+    top:10%;
+    right: 5%;
     display: flex;
+    flex-direction: column;
 }
 
 .btn_orange{
     border-style: none;
     background-color: var(--fundoLaranjaEscuro);
-    padding:0 10px;
+    padding:10px 30px;
     border-radius:5px;
-    margin: 0 10px;
+    margin: 0 4px;
     color: var(--textoLogo);
 }
 
 .btn_orange:hover{
     opacity: 0.7;
+}
+
+.btn_orange_download{
+    font-weight: 500;
+    font-family: roboto;
+    font-size: 16px;
+}
+.special_btn{
+   padding: 5 10px;
+}
+
+.doi_orange{
+    color: #EE7A3A;
+}
+
+.doi_btn_container{
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.text_uppercase{
+    margin-top: 10px;
+    color: #EE7A3A;
+    text-align: center;
+    font-size: 20px;
 }
 
 .video_and_details_box{
@@ -257,4 +296,104 @@ titulo e botões
 
 .places{
 color: grey;
+}
+
+/*
+==================================
+Resumo
+==================================
+*/
+
+.resumo_container{
+  max-width: 71.3vw;
+  height: 189px;
+  margin: 20px 0;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+}
+
+.resumo_title_background{
+  background-color: var(--fundoLaranjaClaro);
+  max-width: 71.3vw;
+  height: 45px;
+}
+
+.resumo_container h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+}
+
+.resumo_container p{
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0 20px;
+
+}
+
+.ver_mais_text{
+    color: #EE7A3A;
+}
+
+/*
+==================================
+Discussões
+==================================
+*/
+
+.discussoes_container{
+  max-width: 71.3vw;
+  height: 621px;
+  margin: 20px 0;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+}
+
+.discussoes_title_background{
+  background-color: var(--fundoLaranjaClaro);
+  max-width: 71.3vw;
+  height: 45px;
+}
+
+.discussoes_container h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+}
+
+
+/*
+==================================
+Discussões - Compartilhar ideias
+==================================
+*/
+
+.share_ideas_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.share_ideias_title{
+   text-align: center;
+   color: #ED7839;
+   margin: 20px 0;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.share_ideas_p{
+    width: 626px;
+    height: 39px;
+    text-align: center;
+    margin: 20px 0;
 }
