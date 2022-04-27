@@ -391,9 +391,107 @@ Discussões - Compartilhar ideias
    font-weight: 700;
 }
 
+.share_icons i{
+    margin: 0 30px;
+    font-size: 20px;
+}
+
 .share_ideas_p{
     width: 626px;
     height: 39px;
     text-align: center;
+    font-size: 14px;
     margin: 20px 0;
+    color: #595959;
+    font-family: Quicksand;
+}
+
+.share_ideas_btn{
+    border-style: none;
+    background: linear-gradient(#FEB254,#F0813D);
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    width: 133px;
+    height: 32px;
+    transition: .5s;
+    z-index: 2;
+}
+
+.share_ideas_btn:hover{
+    opacity: 0.7;
+}
+
+.share_ideas_btn_line{
+    background-color: #E7E7E7;
+    max-width: 66vw;
+    height: 1px;
+    position: relative;
+    top: -2%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/*
+==================================
+Discussões - Comentários
+==================================
+*/
+
+.comentarios_container{
+  margin: 10px;
+  padding: 10px;
+}
+
+.comentario_container{
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+  box-shadow: 1px 2px 5px #ECECEC;
+  margin: 10px;
+  padding: 10px;
+}
+
+.comentario_container h4{
+    color: #ED7839;
+    margin-bottom: 5px;
+}
+
+.comentario_container h6{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.comentario_container p{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.comentario_icons{
+    padding: 0 10px;
+    display: flex;
+}
+
+.comentario_icone_tres_pontos{
+   color: #EE7A3A;
+}
+
+.heart_background{
+    background-color: #EE7A3A;
+    padding: 11px 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin: 0 10px;
+}
+
+.heart{
+    color: #fff;
+}
+
+.comentario_text{
+   color: #757575;
+   margin: 0 3px;
 }
