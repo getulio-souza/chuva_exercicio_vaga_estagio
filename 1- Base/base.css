@@ -160,11 +160,19 @@ Menu mobile
     cursor: pointer;
 }
 
+@media screen and (max-width:678px){
 .menu-mobile-container{
     background-color: #FFB354;
     width: 100vw;
     height: 100vh;
     transform: translateY(100%);
+ }
+}
+
+@media screen and (min-width:678px){
+    .menu-mobile-container, .menu_mobile_icon{
+        display: none;
+    }
 }
 
 
@@ -322,7 +330,9 @@ titulo e botões
 
 @media screen and (max-width:678px){
     .video_container_img{
-        height: 25vh;
+        height: 20vh;
+        width: 74vw;
+        margin-bottom: 10px;
 }
 }
 
