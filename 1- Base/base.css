@@ -31,8 +31,14 @@ Corpo da página
 ==============================
 */
 
-.corpo_da_pagina_base{
+.corpo_da_pagina{
    display: flex;
+}
+
+@media screen and (max-width:678px){
+    .corpo_da_pagina{
+        display: block;
+    }
 }
 
 /*
@@ -43,8 +49,8 @@ Menu Lateral
 
 .menu_lateral_container{
     max-width: 20vw;
-    height: 100vh;
-    box-shadow: 1px 2px 10px grey;
+    height: auto;
+    box-shadow: 2px 0 10px grey;
 }
 
 @media screen and (max-width:678px){
@@ -53,22 +59,22 @@ Menu Lateral
     }
 }
 
-.scala_2019_background{
+.logo_background{
 background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 width: 20vw;
 min-height: 68px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.scala_2019_text{
+.logo_text{
 color: var(--textoLogo);
-font-family: 'Roboto';
+font-family: 'Robotof';
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
 line-height: 35px;
-text-align: center;
-position: relative;
-top: 20%;
 }
 
 .logo_13_slaca{
@@ -111,6 +117,68 @@ color: #725C5C;
     height:2px;
 }
 
+/*
+==============================
+Menu mobile
+==============================
+*/
+
+.menu_mobile_icon{
+    position: absolute;
+    margin: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close_menu_mobile{
+    position: absolute;
+    margin: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ .menu_mobile_container{
+      position: absolute;
+      background-color: #FFB354;
+      width: 100vw;
+      height: 100vh;
+      transform: translate(-100%);
+      transition: .5s;
+      z-index: 1;
+    }
+
+    .open_menu_mobile{
+       transform: translate(0);
+    }
+
+    .menu_mobile{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .menu_mobile a li{
+        margin: 10px 0;
+    }
+    /* .barra_superior_text, .user_info_container, .info_text{
+      display: none; */
+
+
+
+@media screen and (min-width:678px){
+    .menu_mobile_icon, .close_menu_mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width:678px){
+    .menu_mobile_container{
+        display: none;
+    }
+}
 
 /*
 ==============================
@@ -120,7 +188,6 @@ container-principal
 
 @media screen and (max-width:678px){
     .container_principal{
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -140,58 +207,22 @@ Barra superior
 ==============================
 */
 
+@media screen and (min-width:678px){
 .barra_superior_background{
  background-color:#FDF1EB;
  width: 80vw;
  display: flex;
  padding: 10px;
 }
+}
+
+
 
 /*
-==============================
-Menu mobile
-==============================
+=================================
+Cabeçalho
+=================================
 */
-
-.menu_mobile_icon{
-    position: absolute;
-    margin: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-@media screen and (max-width:678px){
-.menu-mobile-container{
-    background-color: #FFB354;
-    width: 100vw;
-    height: 100vh;
-    transform: translateY(100%);
- }
-}
-
-@media screen and (min-width:678px){
-    .menu-mobile-container, .menu_mobile_icon{
-        display: none;
-    }
-}
-
-
-@media screen and (max-width:678px){
-    .barra_superior_background{
-        width: 100vw;
-        height: 70px;
-         background-color:#FDF1EB;
-    }
-    .menu-mobile-container{
-        display: none;
-    }
-}
-
-@media screen and (min-width:678px){
-    .menu_mobile{
-        display: none;
-    }
-}
 
 .barra_superior_text{
     padding-top: 10px;
@@ -201,14 +232,6 @@ Menu mobile
     .barra_superior_text{
         display: none;
     }
-    /* .barra_superior_p{
-        width: 60vw;
-        max-height: 100px;
-    }
-    .barra_superior_text h4{
-        width: 60vw;
-        font-size: 10px;
-    } */
 }
 
 .barra_superior_text_h4{
@@ -270,6 +293,8 @@ Menu mobile
     border-radius: 50%;
     position: relative;
     left: 2%;
+    object-fit: cover;
+    background-position: center;
 }
 
 .superior_box{
@@ -533,7 +558,7 @@ Discussões
 
 @media screen and (max-width:678px){
     .discussoes_container{
-        height: 100vh;
+        height: 95vh;
     }
 }
 
@@ -705,11 +730,18 @@ Footer
 ==================================
 */
 
+.footer_underline{
+    background-color:#E7E7E7;
+    width: 70vw;
+    height:2px;
+}
+
 .footer_container{
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 70vw;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width:678px){
