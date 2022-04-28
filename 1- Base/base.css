@@ -56,7 +56,7 @@ Menu Lateral
 .scala_2019_background{
 background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 width: 20vw;
-height: 68px;
+min-height: 68px;
 }
 
 .scala_2019_text{
@@ -118,8 +118,20 @@ container-principal
 ==============================
 */
 
-.container_principal{
+@media screen and (max-width:678px){
+    .container_principal{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:678px){
+    .container_principal{
     margin-left: 40px;
+}
 }
 
 /*
@@ -135,8 +147,60 @@ Barra superior
  padding: 10px;
 }
 
+/*
+==============================
+Menu mobile
+==============================
+*/
+
+.menu_mobile_icon{
+    position: absolute;
+    margin: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-mobile-container{
+    background-color: #FFB354;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+}
+
+
+@media screen and (max-width:678px){
+    .barra_superior_background{
+        width: 100vw;
+        height: 70px;
+         background-color:#FDF1EB;
+    }
+    .menu-mobile-container{
+        display: none;
+    }
+}
+
+@media screen and (min-width:678px){
+    .menu_mobile{
+        display: none;
+    }
+}
+
 .barra_superior_text{
     padding-top: 10px;
+}
+
+@media screen and (max-width:678px){
+    .barra_superior_text{
+        display: none;
+    }
+    /* .barra_superior_p{
+        width: 60vw;
+        max-height: 100px;
+    }
+    .barra_superior_text h4{
+        width: 60vw;
+        font-size: 10px;
+    } */
 }
 
 .barra_superior_text_h4{
@@ -151,6 +215,12 @@ Barra superior
     margin-right: 10px;
 }
 
+@media screen and (max-width:678px){
+    .info_text p{
+    display: none;
+    }
+}
+
 .idioma_btn_container{
     display: flex;
     justify-content: center;
@@ -160,6 +230,12 @@ Barra superior
     border-radius: 3px;
     cursor: pointer;
     margin: 0 30px;
+}
+
+@media screen and (max-width:678px){
+    .idioma_btn_container{
+        display: none;
+    }
 }
 
 .idioma_btn_container:hover{
@@ -210,26 +286,87 @@ titulo e botões
    align-items: center;
 }
 
+
 .title_and_btns h3{
     font-size: 1.6rem;
-    max-width: 55vw;
     margin: 20px 0;
     color: #EE7A3A;
 }
 
+
+@media screen and (min-width:678px){
+    .title_and_btns h3{
+        max-width: 55vw;
+    }
+}
+
+@media screen and (max-width:678px){
+    .title_and_btns h3{
+        width: 100vw;
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+
 .video_container{
-   background-color: rgba(141, 53, 6, 0.5);
    border-radius: 3px;
    width: 55vw;
-   height: 540px;
+}
+
+
+.video_container_img{
+    width: 52vw;
+    height: 540px;
+    background: rgba(141, 53, 6, 0.5 #8D350680);
+}
+
+@media screen and (max-width:678px){
+    .video_container_img{
+        height: 25vh;
+}
+}
+
+.video_container_texts{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #fff;
+    max-width: 50vw;
+}
+
+.video_container_texts h3{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:678px){
+    .video_container_texts h3{
+    display: none;
+}
+}
+
+.video_container_author{
+    position: absolute;
+    top:60%;
+    left:28%;
+    color: #fff;
+}
+
+.video_container_avatar_photo{
+   width: 20px;
 }
 
 .buttons_and_text_uppercase{
     position:absolute;
-    top:10%;
-    right: 5%;
+    top:15%;
+    right: 1%;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width:678px){
+    .buttons_and_text_uppercase{
+        display: none;
+    }
 }
 
 .btn_orange{
@@ -275,6 +412,19 @@ titulo e botões
 .video_and_details_box{
     display: flex;
 }
+
+
+
+@media screen and (max-width:678px){
+    .video_and_details_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .video_container_title{
+        padding-top: 10px;
+    }
+}
+
 .details_title{
     background-color: var(--fundoLaranjaClaro);
     font-size: 20px;
@@ -283,7 +433,7 @@ titulo e botões
 }
 
 .details_box{
-    margin-left: 40px;
+    /* margin-left: 40px; */
     border: 1px dashed grey;
 }
 .details_box p{
@@ -312,10 +462,28 @@ Resumo
   border: 1px solid #ECECEC;
 }
 
+@media screen and (max-width:678px){
+    .resumo_container{
+        height: 85vh;
+    }
+    .resumo_p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 25px;
+    }
+}
+
 .resumo_title_background{
   background-color: var(--fundoLaranjaClaro);
   max-width: 71.3vw;
   height: 45px;
+}
+
+@media screen and (max-width:678px){
+    .resumo_title_background{
+        text-align: center;
+    }
 }
 
 .resumo_container h3{
@@ -353,11 +521,24 @@ Discussões
   border: 1px solid #ECECEC;
 }
 
+@media screen and (max-width:678px){
+    .discussoes_container{
+        height: 100vh;
+    }
+}
+
 .discussoes_title_background{
   background-color: var(--fundoLaranjaClaro);
   max-width: 71.3vw;
   height: 45px;
 }
+
+@media screen and (max-width:678px){
+    .discussoes_title_background{
+        text-align: center;
+    }
+}
+
 
 .discussoes_container h3{
     font-size: 20px;
@@ -406,6 +587,13 @@ Discussões - Compartilhar ideias
     font-family: Quicksand;
 }
 
+@media screen and (max-width:678px){
+    .share_ideas_p{
+        max-width:60vw;
+        margin-bottom: 60px;
+    }
+}
+
 .share_ideas_btn{
     border-style: none;
     background: linear-gradient(#FEB254,#F0813D);
@@ -448,7 +636,7 @@ Discussões - Comentários
   border-radius: 3px;
   border: 1px solid #ECECEC;
   box-shadow: 1px 2px 5px #ECECEC;
-  margin: 10px;
+  margin: 20px 0;
   padding: 10px;
 }
 
@@ -511,6 +699,20 @@ Footer
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 70vw;
+}
+
+@media screen and (max-width:678px){
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer_logo_and_btn{
+        padding: 20px 0;
+    }
 }
 
 .footer_logo_and_btn{
@@ -523,6 +725,12 @@ Footer
 
 .footer_logo_img{
    width: 300px;
+}
+
+@media screen and (max-width:678px){
+    .footer_logo_img{
+        width: 150px;
+    }
 }
 
 .footer_btn{
