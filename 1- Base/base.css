@@ -391,9 +391,7 @@ titulo e botões
 }
 
 .buttons_and_text_uppercase{
-    position:absolute;
-    top:15%;
-    right: 1%;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
