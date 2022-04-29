@@ -548,7 +548,7 @@ Discussões
 
 .discussoes_container{
   max-width: 71.3vw;
-  height: 570px;
+  height: max-content;
   margin: 20px 0;
   border-radius: 3px;
   border: 1px solid #ECECEC;
@@ -556,7 +556,7 @@ Discussões
 
 @media screen and (max-width:678px){
     .discussoes_container{
-        height: 95vh;
+        height: max-content;
     }
 }
 
@@ -720,6 +720,41 @@ Discussões - Comentários
 .comentario_text{
    color: #757575;
    margin: 0 3px;
+}
+
+/* Comentários extras */
+
+.conteiner_special{
+    background-color: rgba(248, 248, 248, 1)
+}
+
+.conteiner_special h6{
+    color:rgba(92, 92, 92, 1);
+    font-size: 14px;
+}
+
+.container_special_p{
+    margin-top: 20px;
+    /* margin-right: 10px; */
+}
+
+.autor_perfil{
+    display: flex;
+    gap: 10px;
+    float: right;
+    position: relative;
+    top: 10%;
+    color: rgba(237, 120, 57, 1);
+    font-weight: 900;
+}
+
+.coautor{
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.autor_perfil_msg{
+    padding: 0 10px;
 }
 
 /*
