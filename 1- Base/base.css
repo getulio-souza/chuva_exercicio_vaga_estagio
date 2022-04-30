@@ -202,7 +202,7 @@ Menu mobile
 
 /*
 ==============================
-container-principal
+container-principal - Mobile
 ==============================
 */
 
@@ -591,8 +591,6 @@ Discussões
     }
 }
 
-
-
 .discussoes_title_background{
   background-color: var(--fundoLaranjaClaro);
   max-width: 71.3vw;
@@ -657,6 +655,10 @@ Discussões - Compartilhar ideias
     .share_ideas_p{
         max-width:60vw;
         margin-bottom: 60px;
+    }
+    .share_icons{
+        display: flex;
+        
     }
 }
 
@@ -820,6 +822,7 @@ Footer
     max-width: 100px;
     border-style: none;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .footer_text{

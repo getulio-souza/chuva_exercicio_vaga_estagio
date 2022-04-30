@@ -652,6 +652,10 @@ Discussões - Compartilhar ideias
         max-width:60vw;
         margin-bottom: 60px;
     }
+    .share_icons{
+        display: flex;
+        
+    }
 }
 
 .share_ideas_btn{
