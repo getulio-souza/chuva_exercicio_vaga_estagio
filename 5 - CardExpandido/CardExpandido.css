@@ -213,10 +213,8 @@ Barra superior
  width: 80vw;
  display: flex;
  padding: 10px;
+ }
 }
-}
-
-
 
 /*
 =================================
@@ -287,6 +285,7 @@ Cabeçalho
     top: 0;
     right: 0;
 }
+
 .user_info_photo{
     width: 30px;
     height: 30px;
@@ -336,6 +335,8 @@ titulo e botões
 @media screen and (max-width:678px){
     .title_and_btns h3{
         width: 100vw;
+        font-size: 1.3rem;
+        padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
     }
@@ -346,11 +347,11 @@ titulo e botões
    width: 55vw;
 }
 
-
 .video_container_img{
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
+    cursor: pointer;
 }
 
 @media screen and (max-width:678px){
@@ -360,6 +361,8 @@ titulo e botões
         margin-bottom: 10px;
 }
 }
+
+
 
 .video_container_texts{
     position: absolute;
@@ -446,8 +449,7 @@ titulo e botões
     display: flex;
 }
 
-
-
+/* mobile */
 @media screen and (max-width:678px){
     .video_and_details_box{
         display: flex;
@@ -457,6 +459,20 @@ titulo e botões
         padding-top: 10px;
     }
 }
+
+/*tablet*/
+
+@media screen and (min-width:800px){
+    .idioma_btn_container, .idioma_btn_text, .info_text{
+        display: none;
+    }
+    .resumo_container, .discussoes_container{
+        height: fit-content;
+    }
+}
+
+
+
 
 .details_title{
     background-color: var(--fundoLaranjaClaro);
@@ -751,10 +767,6 @@ Discussões - Comentários
 .coautor{
    font-size: 16px;
    font-weight: 700;
-}
-
-.autor_perfil_msg{
-    padding: 0 10px;
 }
 
 /*

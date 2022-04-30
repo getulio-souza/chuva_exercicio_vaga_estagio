@@ -345,6 +345,8 @@ titulo e botões
 @media screen and (max-width:678px){
     .title_and_btns h3{
         width: 100vw;
+        font-size: 1.3rem;
+        padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
     }
@@ -360,12 +362,15 @@ titulo e botões
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
+    /* object-fit: cover; */
+    background-position: center;
+    cursor: pointer;
 }
 
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 74vw;
+        width: 84vw;
         margin-bottom: 10px;
 }
 }
@@ -505,7 +510,7 @@ Resumo
 
 @media screen and (max-width:678px){
     .resumo_container{
-        height: 85vh;
+        height: fit-content;
     }
     .resumo_p{
         display: flex;
@@ -841,6 +846,11 @@ Footer
     max-width: 100px;
     border-style: none;
     margin-top: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+.footer_btn:hover{
+    opacity: 0.6;
 }
 
 .footer_text{

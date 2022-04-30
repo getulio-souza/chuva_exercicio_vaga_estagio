@@ -336,6 +336,8 @@ titulo e botões
 @media screen and (max-width:678px){
     .title_and_btns h3{
         width: 100vw;
+        font-size: 1.3rem;
+        padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
     }
@@ -351,12 +353,13 @@ titulo e botões
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
+    cursor: pointer;
 }
 
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 74vw;
+        width: 82vw;
         margin-bottom: 10px;
 }
 }
@@ -497,7 +500,7 @@ Resumo
 
 @media screen and (max-width:678px){
     .resumo_container{
-        height: 85vh;
+        height: fit-content;
     }
     .resumo_p{
         display: flex;
@@ -556,7 +559,7 @@ Discussões
 
 @media screen and (max-width:678px){
     .discussoes_container{
-        height: 105vh;
+        height: fit-content;
     }
 }
 
@@ -644,7 +647,7 @@ Discussões - Inputs para assunto e conteúdo
         height: 79px;
         width: fit-content;
     }
-    
+
     .conteudo_input{
        width: 67.5vw;
        height: 60px;

@@ -336,6 +336,8 @@ titulo e botões
 @media screen and (max-width:678px){
     .title_and_btns h3{
         width: 100vw;
+        font-size: 1.3rem;
+        padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
     }
@@ -351,6 +353,7 @@ titulo e botões
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
+    cursor: pointer;
 }
 
 @media screen and (max-width:678px){
@@ -556,7 +559,7 @@ Discussões
 
 @media screen and (max-width:678px){
     .discussoes_container{
-        height: 95vh;
+        height: fit-content;
     }
 }
 

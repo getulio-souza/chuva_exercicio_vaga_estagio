@@ -59,6 +59,7 @@ Menu Lateral
     }
 }
 
+
 .logo_background{
 background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 width: 20vw;
@@ -142,14 +143,14 @@ Menu mobile
       background-color: #FFB354;
       width: 100vw;
       height: 100vh;
-      transform: translate(-100%);
+      transform: translateY(-100%);
       transition: .5s;
       z-index: 1;
     }
 
-    .open_menu_mobile{
-       transform: translate(0);
-    }
+.open_menu_mobile{
+       transform: translateY(0);
+}
 
     .menu_mobile{
         position: fixed;
@@ -336,6 +337,8 @@ titulo e botões
 @media screen and (max-width:678px){
     .title_and_btns h3{
         width: 100vw;
+        font-size: 1.3rem;
+        padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
     }
@@ -351,12 +354,13 @@ titulo e botões
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
+    cursor: pointer;
 }
 
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 74vw;
+        width: 82vw;
         margin-bottom: 10px;
 }
 }
@@ -497,7 +501,7 @@ Resumo
 
 @media screen and (max-width:678px){
     .resumo_container{
-        height: 85vh;
+        height: fit-content;
     }
     .resumo_p{
         display: flex;
@@ -556,9 +560,11 @@ Discussões
 
 @media screen and (max-width:678px){
     .discussoes_container{
-        height: 95vh;
+        height: fit-content;
     }
 }
+
+
 
 .discussoes_title_background{
   background-color: var(--fundoLaranjaClaro);
@@ -648,8 +654,8 @@ Discussões - Compartilhar ideias
     background-color: #E7E7E7;
     max-width: 66vw;
     height: 1px;
-    position: relative;
-    top: -2%;
+    position: absolute;
+    top: -4%;
     margin: 0 auto;
     z-index: 1;
 }
