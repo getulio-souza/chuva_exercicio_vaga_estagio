@@ -117,6 +117,19 @@ color: #725C5C;
     height:2px;
 }
 
+.selected_category{
+   background-color: #FDF1EB;
+   padding: 1px 0;
+   position: relative;
+}
+
+.small_orange_bar{
+    background-color: #ED7839;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+}
+
 /*
 ==============================
 Menu mobile
@@ -142,13 +155,13 @@ Menu mobile
       background-color: #FFB354;
       width: 100vw;
       height: 100vh;
-      transform: translate(-100%);
+      transform: translateY(-100%);
       transition: .5s;
       z-index: 1;
     }
 
     .open_menu_mobile{
-       transform: translate(0);
+       transform: translateY(0);
     }
 
     .menu_mobile{
@@ -162,11 +175,16 @@ Menu mobile
     }
     .menu_mobile a li{
         margin: 10px 0;
+        color: red;
     }
-    /* .barra_superior_text, .user_info_container, .info_text{
-      display: none; */
 
+    .menu_mobile a li:hover{
+        color: #fff;
+    }
 
+.logo_img_mobile{
+        width: 100%;
+    }
 
 @media screen and (min-width:678px){
     .menu_mobile_icon, .close_menu_mobile{
@@ -295,6 +313,7 @@ Cabeçalho
     left: 2%;
     object-fit: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .superior_box{
@@ -359,9 +378,12 @@ titulo e botões
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 82vw;
+        width: 84vw; 
         margin-bottom: 10px;
-}
+        background-position: center;
+        object-fit: cover;
+        margin: 0 auto;
+  }
 }
 
 .video_container_texts{
@@ -399,10 +421,11 @@ titulo e botões
     flex-direction: column;
 }
 
-@media screen and (max-width:678px){
-    .buttons_and_text_uppercase{
-        display: none;
-    }
+.btn_orange, 
+.btn_orange_download,
+.special_btn,
+.doi_btn_container{
+    cursor: pointer;
 }
 
 .btn_orange{
@@ -632,7 +655,7 @@ Discussões - Inputs para assunto e conteúdo
 }
 
 .assunto_input{
-   width: 55vw;
+   width: 67.5vw;
    height: 30px;
    border: 1px solid #725C5C;
 }
@@ -710,7 +733,6 @@ Discussões - Inputs para assunto e conteúdo
     }
 }
 
-
 .conteudo_btn{
     background: linear-gradient(rgba(254, 177, 84, 1),rgba(241, 131, 62, 1));
     border-style: none;
@@ -730,12 +752,13 @@ Discussões - Inputs para assunto e conteúdo
 
 
 @media screen and (max-width:678px){
-    .input_container_conteudo, .input_container_assunto{ 
-        width: 57vw;
+    .conteudo_input, .assunto_input{ 
+        width: 54vw;
+    }
+    .input_container_conteudo{
+        width: 54.3vw;
     }
 }
-
-
 
 /*
 ==================================

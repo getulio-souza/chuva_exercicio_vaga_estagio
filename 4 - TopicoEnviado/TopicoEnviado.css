@@ -66,12 +66,6 @@ Menu Lateral
     }
 }
 
-/* @media screen and (min-width:800px){
-    .menu_lateral_container{
-        display: none;
-    }    
-}     */
-
 .logo_background{
 background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 width: 20vw;
@@ -94,6 +88,7 @@ line-height: 35px;
    padding: 10px 0;
    margin: 10px 0;
 }
+
 
 .logo_img{
   max-width: 20vw;
@@ -130,6 +125,19 @@ color: #725C5C;
     height:2px;
 }
 
+.selected_category{
+   background-color: #FDF1EB;
+   padding: 1px 0;
+   position: relative;
+}
+
+.small_orange_bar{
+    background-color: #ED7839;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+}
+
 /*
 ==============================
 Menu mobile
@@ -155,13 +163,13 @@ Menu mobile
       background-color: #FFB354;
       width: 100vw;
       height: 100vh;
-      transform: translate(-100%);
+      transform: translateY(-100%);
       transition: .5s;
       z-index: 1;
     }
 
     .open_menu_mobile{
-       transform: translate(0);
+       transform: translateY(0);
     }
 
     .menu_mobile{
@@ -175,10 +183,24 @@ Menu mobile
     }
     .menu_mobile a li{
         margin: 10px 0;
+        color: red;
     }
-    /* .barra_superior_text, .user_info_container, .info_text{
-      display: none; */
 
+    .menu_mobile a li:hover{
+        color: #fff;
+    }
+
+    .logo_img_mobile{
+        width: 100%;
+    }
+
+    .menu_mobile a{
+        transition: .5s;
+    }
+
+    .menu_mobile a:hover{
+        color: #fff;
+    }
 
 
 @media screen and (min-width:678px){
@@ -304,6 +326,7 @@ Cabeçalho
     left: 2%;
     object-fit: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .superior_box{
@@ -362,17 +385,18 @@ titulo e botões
     width: 52vw;
     height: 540px;
     background: rgba(141, 53, 6, 0.5 #8D350680);
-    /* object-fit: cover; */
-    background-position: center;
     cursor: pointer;
 }
 
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 84vw;
+        width: 84vw; 
         margin-bottom: 10px;
-}
+        background-position: center;
+        object-fit: cover;
+        margin: 0 auto;
+   }
 }
 
 .video_container_texts{
@@ -415,6 +439,14 @@ titulo e botões
         display: none;
     }
 } */
+
+
+.btn_orange, 
+.btn_orange_download,
+.special_btn,
+.doi_btn_container{
+    cursor: pointer;
+}
 
 .btn_orange{
     border-style: none;
@@ -666,6 +698,12 @@ Discussões - Compartilhar ideias
     z-index: 1;
 }
 
+@media screen and (max-width:678px){
+    .share_ideas_btn_line{
+        display: none;
+    }
+}
+
 /*
 ==================================
 Discussões - Comentários
@@ -677,31 +715,17 @@ Discussões - Comentários
   padding: 10px;
 }
 
-/*comentário desfocado*/
-
-.comentario_container_desfocado{  
-  background-color:rgba(231, 231, 231, 0.561);
-  opacity: 0.1;
-  border-radius: 3px;
-  border: 1px solid #ECECEC;
-  box-shadow: 1px 2px 5px #ECECEC;
-  margin: 20px 0;
-  padding: 10px;
-  position: relative;
-}
-
-.two_boxes_in_one{
-    position: relative;
-}
 .comentario_visivel{
-    position: absolute;
+    background-color:rgba(237, 230, 230, 0.561);
     margin: 0 auto;
+    padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 .comentario_visivel_double_check_icon{
    font-size: 25px;
-   padding: 15px;
+   padding: 5px;
    color: rgba(112, 112, 112, 1);
 }
 
@@ -717,18 +741,17 @@ Discussões - Comentários
     margin: 10px 0;
 }
 
-.comentario_container_desfocado h6{
-    font-weight: 500;
-    margin-bottom: 10px;
+@media screen and (max-width:678px){
+    .comentario_visivel_double_check_icon{
+        padding-bottom: 20px;
+        font-size: 15px ;
+    }
+    .comentario_visivel h3{
+        font-size: 15px;
+    }
 }
 
-.comentario_container_desfocado p{
-    font-weight: 400;
-    margin-bottom: 5px;
-} 
-
-
-/* comentários visíveis */
+/* comentários extras */
 
 .comentario_container{
   border-radius: 3px;

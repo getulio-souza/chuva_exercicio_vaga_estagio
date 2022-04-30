@@ -117,6 +117,19 @@ color: #725C5C;
     height:2px;
 }
 
+.selected_category{
+   background-color: #FDF1EB;
+   padding: 1px 0;
+   position: relative;
+}
+
+.small_orange_bar{
+    background-color: #ED7839;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+}
+
 /*
 ==============================
 Menu mobile
@@ -137,18 +150,19 @@ Menu mobile
     font-size: 1.5rem;
     cursor: pointer;
 }
+
  .menu_mobile_container{
       position: absolute;
       background-color: #FFB354;
       width: 100vw;
       height: 100vh;
-      transform: translate(-100%);
+      transform: translateY(-100%);
       transition: .5s;
       z-index: 1;
     }
 
     .open_menu_mobile{
-       transform: translate(0);
+       transform: translateY(0);
     }
 
     .menu_mobile{
@@ -160,13 +174,19 @@ Menu mobile
         font-size: 20px;
         padding: 20px 0;
     }
+
     .menu_mobile a li{
         margin: 10px 0;
+        color: red;
     }
-    /* .barra_superior_text, .user_info_container, .info_text{
-      display: none; */
 
-
+    .menu_mobile a li:hover{
+        color: #fff;
+    }  
+  
+    .logo_img_mobile{
+        width: 100%;
+    }
 
 @media screen and (min-width:678px){
     .menu_mobile_icon, .close_menu_mobile{
@@ -178,6 +198,18 @@ Menu mobile
     .menu_mobile_container{
         display: none;
     }
+}
+
+/*
+==============================
+Menu mobile - Social
+==============================
+*/
+
+.mobile_social{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /*
@@ -294,6 +326,7 @@ Cabeçalho
     left: 2%;
     object-fit: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .superior_box{
@@ -339,6 +372,7 @@ titulo e botões
         padding: 0 5px;
         text-align: center;
         margin-top: 5rem;
+        
     }
 }
 
@@ -357,12 +391,13 @@ titulo e botões
 @media screen and (max-width:678px){
     .video_container_img{
         height: 20vh;
-        width: 74vw;
+        width: 84vw; 
         margin-bottom: 10px;
+        background-position: center;
+        object-fit: cover;
+        margin: 0 auto;
+  }
 }
-}
-
-
 
 .video_container_texts{
     position: absolute;
@@ -399,10 +434,12 @@ titulo e botões
     flex-direction: column;
 }
 
-@media screen and (max-width:678px){
-    .buttons_and_text_uppercase{
-        display: none;
-    }
+
+.btn_orange, 
+.btn_orange_download,
+.special_btn,
+.doi_btn_container{
+    cursor: pointer;
 }
 
 .btn_orange{
@@ -513,7 +550,7 @@ Resumo
 
 @media screen and (max-width:678px){
     .resumo_container{
-        height: 85vh;
+        height: fit-content;
     }
     .resumo_p{
         display: flex;
@@ -668,6 +705,12 @@ Discussões - Compartilhar ideias
     top: -2%;
     margin: 0 auto;
     z-index: 1;
+}
+
+@media screen and (max-width:678px){
+    .share_ideas_btn_line{
+        display: none;
+    }
 }
 
 /*
