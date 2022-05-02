@@ -383,7 +383,7 @@ titulo e botões
         margin-bottom: 10px;
         background-position: center;
         object-fit: cover;
-        margin: 0 auto;
+        margin: 0 10px;
   }
 }
 
@@ -451,15 +451,18 @@ titulo e botões
    padding: 5 10px;
 }
 
-.doi_orange{
-    color: #EE7A3A;
-}
-
 .doi_btn_container{
+    max-width: 20px;
     background-color: #fff;
-    border-radius: 50%;
     font-size: 1em;
     font-weight: 900;
+}
+
+.doi_orange{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #EE7A3A;
 }
 
 .text_uppercase{
@@ -565,6 +568,7 @@ Resumo
 
 .ver_mais_text{
     color: #EE7A3A;
+    cursor: pointer;
 }
 
 /*
@@ -697,6 +701,7 @@ Discussões - Comentários
 ==================================
 */
 
+
 .comentarios_container{
   margin: 10px;
   padding: 10px;
@@ -818,6 +823,11 @@ Footer
     max-width: 100px;
     border-style: none;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer_btn:hover{
+    opacity: 0.6;
 }
 
 .footer_text{

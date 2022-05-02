@@ -395,7 +395,7 @@ titulo e botões
         margin-bottom: 10px;
         background-position: center;
         object-fit: cover;
-        margin: 0 auto;
+        margin: 0 10px;
   }
 }
 
@@ -464,15 +464,18 @@ titulo e botões
    padding: 5 10px;
 }
 
-.doi_orange{
-    color: #EE7A3A;
-}
-
 .doi_btn_container{
+    max-width: 20px;
     background-color: #fff;
-    border-radius: 50%;
     font-size: 1em;
     font-weight: 900;
+}
+
+.doi_orange{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #EE7A3A;
 }
 
 .text_uppercase{
@@ -591,6 +594,7 @@ Resumo
 
 .ver_mais_text{
     color: #EE7A3A;
+    cursor: pointer;
 }
 
 /*
@@ -678,6 +682,9 @@ Discussões - Compartilhar ideias
         max-width:60vw;
         margin-bottom: 60px;
     }
+    .share_icons{
+        display: flex;
+    }
 }
 
 .share_ideas_btn{
@@ -695,16 +702,6 @@ Discussões - Compartilhar ideias
 
 .share_ideas_btn:hover{
     opacity: 0.7;
-}
-
-.share_ideas_btn_line{
-    background-color: #E7E7E7;
-    max-width: 66vw;
-    height: 1px;
-    position: relative;
-    top: -2%;
-    margin: 0 auto;
-    z-index: 1;
 }
 
 @media screen and (max-width:678px){
@@ -853,6 +850,10 @@ Footer
     max-width: 71.3vw;
 }
 
+.footer_btn:hover{
+    opacity: 0.6;
+}
+
 .footer_logo_img{
    width: 300px;
 }
@@ -871,6 +872,10 @@ Footer
     max-width: 100px;
     border-style: none;
     margin-top: 10px;
+    cursor: pointer;
+}
+.footer_btn:hover{
+    opacity: 0.7;
 }
 
 .footer_text{

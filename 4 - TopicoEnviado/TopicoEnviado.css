@@ -392,10 +392,9 @@ titulo e botões
     .video_container_img{
         height: 20vh;
         width: 84vw; 
-        margin-bottom: 10px;
         background-position: center;
         object-fit: cover;
-        margin: 0 auto;
+        margin: 0 10px;
    }
 }
 
@@ -470,15 +469,18 @@ titulo e botões
    padding: 5 10px;
 }
 
-.doi_orange{
-    color: #EE7A3A;
-}
-
 .doi_btn_container{
+    max-width: 20px;
     background-color: #fff;
-    border-radius: 50%;
     font-size: 1em;
     font-weight: 900;
+}
+
+.doi_orange{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #EE7A3A;
 }
 
 .text_uppercase{
@@ -734,6 +736,10 @@ Discussões - Comentários
     background-color: transparent;
     text-decoration: underline;
     color: rgba(237, 120, 57, 1);
+    cursor: pointer;
+}
+.comentario_visivel_btn:hover{
+    opacity: 0.7;
 }
 
 .comentario_visivel h3{
@@ -872,6 +878,11 @@ Footer
     transition: .5s;
     cursor: pointer;
 }
+
+.footer_btn:hover{
+    opacity: 0.6;
+}
+
 .footer_btn:hover{
     opacity: 0.6;
 }

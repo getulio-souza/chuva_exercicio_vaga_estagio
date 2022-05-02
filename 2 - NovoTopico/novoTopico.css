@@ -382,8 +382,8 @@ titulo e botões
         margin-bottom: 10px;
         background-position: center;
         object-fit: cover;
-        margin: 0 auto;
-  }
+        margin: 0 10px;  
+    }
 }
 
 .video_container_texts{
@@ -450,15 +450,18 @@ titulo e botões
    padding: 5 10px;
 }
 
-.doi_orange{
-    color: #EE7A3A;
-}
-
 .doi_btn_container{
+    max-width: 20px;
     background-color: #fff;
-    border-radius: 50%;
     font-size: 1em;
     font-weight: 900;
+}
+
+.doi_orange{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    color: #EE7A3A;
 }
 
 .text_uppercase{
@@ -626,7 +629,7 @@ Discussões - Compartilhar ideias
    text-align: center;
    color: rgba(92, 92, 92, 1);
    margin: 20px 0;
-   font-size: 14px;
+   font-size: 18px;
    font-weight: 400;
 }
 
@@ -887,6 +890,11 @@ Footer
     max-width: 100px;
     border-style: none;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer_btn:hover{
+    opacity: 0.6;
 }
 
 .footer_text{
